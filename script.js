@@ -1,5 +1,9 @@
-// // initiate selection of password criteria
-function generate() {
+var generateBtn = document.querySelector("#generate");
+
+
+
+function generatePassword() {
+
 
 //  Set password length and character types
 let passLength = prompt("Select your password lenght (between 8 and 128 characters)");
@@ -33,20 +37,17 @@ for (var i=0; i<=passLength; i++) {
 
 // display password in card-body
 document.getElementById("card-body").values = password;
+}
+
+
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
 
 }
 
-// // Assignment Code
-// var generateBtn = document.querySelector("#generate");
-
-// // Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
-//   passwordText.value = password;
-
-// }
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
