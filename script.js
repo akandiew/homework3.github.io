@@ -16,16 +16,16 @@ let password = "";
 
 // determine character set to use for password
     if (passCharlc === "yes")   {
-        let values = values + "abcdefghijklmnopqrstuvwxyz";
+        values = values + "abcdefghijklmnopqrstuvwxyz";
     }
     if (passCharuc === "yes")   {
-        let values = values + "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        values = values + "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     }
     if (passCharnum === "yes")  {
-        let values = values + "1234567890";
+        values = values + "1234567890";
     }
     if (passCharspec === "yes") {
-        let values = values + "!@#$%^&*_=+-/.?<>)";
+        values = values + "!@#$%^&*_=+-/.?<>)";
     }
 
 
@@ -36,7 +36,7 @@ for (var i=0; i<=passLength; i++) {
 
 
 // display password in card-body
-document.getElementById("card-body").values = password;
+return password
 }
 
 
